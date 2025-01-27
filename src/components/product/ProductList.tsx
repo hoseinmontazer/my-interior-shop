@@ -1,0 +1,45 @@
+import { useState } from 'react';
+import { products as defaultProducts } from '../../data/Product'; 
+import ProductCard from './ProductCard';
+import {Product} from '../../data/Product'
+
+interface ProductListProps {
+    limit: any;
+    currentItems? : Product[];
+    products?: Product[];
+}
+
+const ProductList:React.FC<ProductListProps> = ({ limit, currentItems, products }) => {
+    const [showAll, setShowAll] = useState<boolean>(false);
+
+    const finalProducts = currentItems || products || defaultProducts;
+
+    const visibleProducts = showAll || !limit ? finalProducts : finalProducts.slice(0, limit);
+
+    return (
+        <div className="flex flex-col justify-center py-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mx-5">
+                {visibleProducts.map((product, index) => (
+                    <ProductCard
+                        key={index}
+                        image={product.image}
+                        name={product.name}
+                        description={product.description}
+                        price={product.price}
+                        sale={product.sale}
+                    />
+                ))}
+            </div>
+            {limit && (
+                <button
+                    onClick={() => setShowAll(!showAll)}
+                    className="text-lg font-bold border-2 border-yellow-600 text-yellow-600 w-full lg:w-1/2 py-3 mt-4 hover:bg-slate-300"
+                >
+                    {showAll ? 'Show Less' : 'Show More'}
+                </button>
+            )}
+        </div>
+    );
+};
+
+export default ProductList;
