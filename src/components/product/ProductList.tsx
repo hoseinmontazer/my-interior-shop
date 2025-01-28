@@ -17,8 +17,8 @@ const ProductList:React.FC<ProductListProps> = ({ limit, currentItems, products 
     const visibleProducts = showAll || !limit ? finalProducts : finalProducts.slice(0, limit);
 
     return (
-        <div className="flex flex-col justify-center py-10">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mx-5">
+        <div className="flex flex-col justify-around">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-8 xl:mx-24 mx-8 pb-10">
                 {visibleProducts.map((product, index) => (
                     <ProductCard
                         key={index}
@@ -33,7 +33,7 @@ const ProductList:React.FC<ProductListProps> = ({ limit, currentItems, products 
             {limit && (
                 <button
                     onClick={() => setShowAll(!showAll)}
-                    className="text-lg font-bold border-2 border-yellow-600 text-yellow-600 w-full lg:w-1/2 py-3 mt-4 hover:bg-slate-300"
+                    className="flex self-center text-lg font-bold border-2 border-yellow-600 text-yellow-600 py-4 px-16 my-10 hover:bg-slate-300"
                 >
                     {showAll ? 'Show Less' : 'Show More'}
                 </button>

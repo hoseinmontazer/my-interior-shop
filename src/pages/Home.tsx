@@ -1,10 +1,10 @@
 import Footer from "../components/footer/Footer"
 import MyHeader from "../components/header/MyHeader"
-import TitlePic from "../components/TitlePic"
-import BrowseTheRange from "../components/BrowseTheRange"
+import TitlePic from "../components/home/TitlePic"
+import BrowseTheRange from "../components/home/BrowseTheRange"
 import HomePageProduct from "../components/product/HomePageProduct"
-import Inspiration from "../components/Inspiration"
-import Furniture from "../components/Furniture"
+import Inspiration from "../components/home/Inspiration"
+import Furniture from "../components/home/Furniture"
 
 const Home = () => {
 

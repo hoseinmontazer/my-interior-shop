@@ -3,11 +3,10 @@ export interface Product {
   name: string;
   description: string;
   price: string;
-  sale?: string; // Optional property
+  sale?: string;
   image: string;
 }
 
-// Export the products array with the defined type
 export const products: Product[] = [
   {
     name: "Syltherine",

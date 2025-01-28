@@ -14,7 +14,7 @@ const BrowseTheRange = () => {
               "https://res.cloudinary.com/dxjjsfami/image/upload/v1737989343/dining_bsgqsu.png"
             }
             alt="dining"
-            className="w-full h-[580px] object-center object-cover"
+            className="w-full h-[580px] object-center object-cover rounded-xl"
           />
           <figcaption className="py-2 lg:py-8 text-3xl font-bold text-gray-700">
             Dining
@@ -26,7 +26,7 @@ const BrowseTheRange = () => {
               "https://res.cloudinary.com/dxjjsfami/image/upload/v1737989343/living_hbfcgy.png"
             }
             alt="living"
-            className="w-full h-[580px] object-center object-cover"
+            className="w-full h-[580px] object-center object-cover rounded-xl"
           />
           <figcaption className="py-2 lg:py-8 text-3xl font-bold text-gray-700">
             Living
@@ -38,7 +38,7 @@ const BrowseTheRange = () => {
               "https://res.cloudinary.com/dxjjsfami/image/upload/v1737989343/bedroom_mred1o.png"
             }
             alt="bedroom"
-            className="w-full h-[580px] object-center object-cover"
+            className="w-full h-[580px] object-center object-cover rounded-xl"
           />
           <figcaption className="py-2 lg:py-8 text-3xl font-bold text-gray-700">
             Bedroom
