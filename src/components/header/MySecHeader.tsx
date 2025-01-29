@@ -11,8 +11,8 @@ const MySecHeader:React.FC<MySecHeaderProps> = ({title}) => {
                  style={{ backgroundImage: `url(${"https://res.cloudinary.com/dxjjsfami/image/upload/v1737531172/cartBg_ub5z5b.jpg"})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundColor: '#ffffffb3', backgroundBlendMode: 'overlay' }}>
                     <div className="absolute inset-0 flex flex-col justify-center items-center text-dark text-center">
                         <FaPhoenixSquadron className="text-4xl" />
-                        <h1 className="py-2 text-6xl">{title}</h1>
-                        <div className="flex justify-center items-center text-1xl p-1">
+                        <h1 className="py-2 text-7xl">{title}</h1>
+                        <div className="flex justify-center items-center text-2xl p-1">
                             <div className="font-bold"> Home </div>
                             <PiGreaterThan className="mx-1" />
                             <div>{title}</div>

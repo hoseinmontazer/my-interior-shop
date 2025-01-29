@@ -9,7 +9,7 @@ import Furniture from "../components/home/Furniture"
 const Home = () => {
 
     return (
-        <div className=" bg-black min-h-screen overflow-x-hidden">
+        <div className=" bg-black min-h-screen">
           <div className="shop-container">
                 <MyHeader />
                 <TitlePic />

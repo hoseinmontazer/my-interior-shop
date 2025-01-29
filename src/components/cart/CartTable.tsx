@@ -4,40 +4,48 @@ import SubtotalCard from "./SubtotalCard";
 
 const CartTable = () => {
   return (
-    <div className="container py-16 pt-16 flex xl:justify-around xl:flex-row flex-col">
-      <table className="hidden xl:table text-center lg:text-lg">
-        <tr className="bg-purple-50">
-          <th className="lg:px-3 lg:py-0.5"></th>
-          <th className="lg:px-3 lg:py-0.5">Product</th>
-          <th className="lg:px-3 lg:py-0.5">Price</th>
-          <th className="lg:px-3 lg:py-0.5">Quantity</th>
-          <th className="lg:px-3 lg:py-0.5">Subtotal</th>
-          <th className="lg:px-3 lg:py-0.5"></th>
-        </tr>
-        <tr className="text-wrap">
-          <th className="lg:px-4 lg:py-3">
-            <img
-              src={
-                "https://res.cloudinary.com/dxjjsfami/image/upload/v1738009009/sofa_gsvogq.jpg"
-              }
-              alt="product picture"
-              className="w-32 h-32 object-cover rounded"
-            />
-          </th>
-          <td className="lg:px-4 lg:py-3 text-muted">Asgaard chair</td>
-          <td className="lg:px-4 lg:py-3 text-muted">2500 $</td>
-          <td className="lg:px-4 lg:py-3 lg:text-4xl text-center">
-            <TbSquareNumber1 />
-          </td>
-          <td className="lg:px-4 lg:py-3">2500 $</td>
-          <td className="lg:px-4 lg:py-3 lg:text-2xl text-center text-yellow-600">
-            <FaTrash />
-          </td>
-        </tr>
+    <main className="py-16 pt-16 p-5 flex xl:flex-row xl:justify-around flex-col justify-center mx-auto">
+      <table className="hidden md:table text-center mb-5">
+        <thead className="bg-purple-50 text-2xl">
+          <tr>
+            <th className="lg:px-10 py-4"></th>
+            <th className="lg:px-10 py-4">Product</th>
+            <th className="lg:px-10 py-4">Price</th>
+            <th className="lg:px-10 py-4">Quantity</th>
+            <th className="lg:px-10 py-4">Subtotal</th>
+            <th className="lg:px-10 py-4"></th>
+          </tr>
+        </thead>
+        <tbody className="text-xl text-wrap">
+          <tr>
+            <td className="lg:px-10">
+              <img
+                src={
+                  "https://res.cloudinary.com/dxjjsfami/image/upload/v1738009009/sofa_gsvogq.jpg"
+                }
+                alt="product picture"
+                className="w-32 h-32 object-cover rounded"
+              />
+            </td>
+            <td className="lg:px-10 text-gray-400">Asgaard chair</td>
+            <td className="lg:px-10 text-gray-400">2500 $</td>
+            <td className="lg:px-24">
+              <p>
+              <TbSquareNumber1 className="size-8" />
+                </p>
+            </td>
+            <td className="lg:px-10">2500 $</td>
+            <td className="lg:px-10 text-center text-yellow-600">
+              <button>
+                <FaTrash className="size-6 hover:text-yellow-800" />
+              </button>
+            </td>
+          </tr>
+        </tbody>
       </table>
 
-      <div className="block xl:hidden space-y-4 mb-4 mr-2 w-full">
-        <div className="flex items-center border rounded-lg p-4 shadow">
+      <section className="block md:hidden space-y-4 mb-4 mr-2 w-full">
+        <article className="flex items-center border rounded-lg p-4 shadow">
           <img
             src={
               "https://res.cloudinary.com/dxjjsfami/image/upload/v1738009009/sofa_gsvogq.jpg"
@@ -46,22 +54,24 @@ const CartTable = () => {
             className="w-24 h-24 object-cover rounded"
           />
           <div className="ml-4 space-y-1">
-            <p className="text-lg font-medium">Asgaard chair</p>
-            <p className="text-muted">2500 $</p>
-            <div className="flex items-center justify-between">
-              <div className="text-4xl pb-2">
-                <TbSquareNumber1 />
-              </div>
-              <p className="text-yellow-600 text-3xl">
-                <FaTrash />
+            <h2 className="text-xl font-medium">Asgaard chair</h2>
+            <p className="text-gray-600 p-1">2500 $</p>
+            <div className="flex items-center justify-between p-1">
+              <p>
+                <TbSquareNumber1 className="size-8" />
               </p>
+              <button className="text-yellow-600">
+                <FaTrash className="size-6 hover:text-yellow-800" />
+              </button>
             </div>
-            <p className="text-lg font-semibold">Subtotal: 2500 $</p>
+            <p className="text-xl font-semibold">Subtotal: 2500 $</p>
           </div>
-        </div>
-      </div>
-      <SubtotalCard />
-    </div>
+        </article>
+      </section>
+      <aside>
+        <SubtotalCard />
+      </aside>
+    </main>
   );
 };
 export default CartTable;

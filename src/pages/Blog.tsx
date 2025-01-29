@@ -6,14 +6,14 @@ import Posts from "../components/posts/Posts";
 
 const Blog = () => {
     return (
-        <div className="bg-black min-h-screen overflow-x-hidden">
-            <div className="shop-container">
+        <div className="bg-black min-h-screen">
+            <main className="shop-container">
                 <MyHeader />
                 <MySecHeader title="Blog" />
                 <Posts />
                 <UpperFooter />
                 <Footer />
-            </div>
+            </main>
 
         </div>
     )

@@ -7,8 +7,8 @@ import MySecHeader from "../components/header/MySecHeader";
 const Checkout = () => {
   return (
     <div>
-      <div className="bg-black overflow-x-hidden">
-        <div className="bg-white max-w-[1400px] mx-auto">
+      <div className="bg-black">
+        <div className="shop-container">
           <MyHeader />
           <MySecHeader title="Checkout" />
           <Billing />

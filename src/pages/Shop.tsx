@@ -6,8 +6,8 @@ import ShopItems from "../components/product/ShopItems";
 
 const Shop = () => {
   return (
-    <div className="bg-black min-h-screen overflow-x-hidden">
-      <div className="shop-container bg-black min-h-screen overflow-x-hidden">
+    <div className="bg-black min-h-screen">
+      <div className="shop-container bg-black min-h-screen">
         <MyHeader />
         <MySecHeader title="Shop" />
         <ShopItems />

@@ -6,14 +6,14 @@ import MySecHeader from "../components/header/MySecHeader";
 
 const Cart = () => {
     return (
-        <div className="bg-black overflow-x-hidden">
-            <div className="bg-white max-w-[1400px] mx-auto">
+        <div className="bg-black">
+            <main className="shop-container">
                 <MyHeader />
                 <MySecHeader title="Cart"/>
                 <CartTable />
                 <UpperFooter />
                 <Footer />
-            </div>
+            </main>
 
 
         </div>

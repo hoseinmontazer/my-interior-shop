@@ -6,7 +6,7 @@ import MySecHeader from "../components/header/MySecHeader";
 
 const Contact=()=>{
     return(
-        <div className="bg-black overflow-x-hidden">
+        <div className="bg-black">
             <div className="bg-white max-w-[1400px] mx-auto">
                 <MyHeader />
                 <MySecHeader title="Contact"/>
