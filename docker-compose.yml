@@ -7,8 +7,8 @@ services:
     ports:
       - "3021:80"  
     networks:
-      - gotorrentz
+      - zara-bookishlady
 
 networks:
-  gotorrentz:
+  zara-bookishlady:
     external: true
