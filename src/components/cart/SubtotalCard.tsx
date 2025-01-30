@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 
 const SubtotalCard = () => {
   return (
-    <section className="pb-16 px-5 xl:px-24 bg-purple-50 text-center mb-10">
+    <section className="pb-16 px-5 xl:px-16 bg-purple-50 text-center mb-10">
       <header>
-        <h1 className="p-5 pt-8 text-5xl font-bold">Cart Totals</h1>
+        <h1 className="p-5 pt-8 text-3xl font-bold">Cart Totals</h1>
       </header>
-      <dl className="text-xl">
+      <dl className="text-lg">
         <div className="flex justify-between p-3">
           <dt className="font-semibold">Subtotal</dt>
           <dd className="text-muted">2500 $</dd>
@@ -18,7 +18,7 @@ const SubtotalCard = () => {
       </dl>
 
       <Link to="/checkout">
-        <button className="border-2 border-black hover:bg-slate-200 rounded-2xl px-12 py-3 mb-8 m-3 text-lg xl:text-2xl">
+        <button className="border-2 border-black hover:bg-slate-200 rounded-2xl px-10 py-3 mb-8 m-3 text-lg xl:text-xl">
           Check Out
         </button>
       </Link>

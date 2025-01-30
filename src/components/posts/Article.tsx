@@ -3,7 +3,7 @@ import RecentPosts from "./RecentPosts";
 
 const Article = () => {
   return (
-    <aside className="xl:w-1/4 w-full flex-col justify-center items-center p-3 xl:p-1">
+    <aside className="xl:w-1/4 w-full flex-col justify-center items-center p-3 xl:p-5 mx-auto">
       <form className="flex justify-center">
         <div className="relative flex items-center justify-end mt-7 xl:mt-0">
           <input

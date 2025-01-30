@@ -5,7 +5,7 @@ const ContactInfo = () => {
   return (
     <section className="xl:py-16 p-3">
       <header className="flex flex-col justify-center items-center text-center p-4">
-        <h1 className="text-3xl xl:text-5xl font-bold py-3">
+        <h1 className="text-3xl xl:text-4xl font-bold py-3">
           Get In Touch With Us
         </h1>
         <p className="text-lg text-gray-400 max-w-2xl leading-relaxed">

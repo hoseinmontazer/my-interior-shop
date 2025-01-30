@@ -1,6 +1,6 @@
 const Payment = () => {
   return (
-    <section className="flex flex-col items-center p-4 text-xl leading-10 text-justify">
+    <section className="flex flex-col items-center p-4 text-lg leading-10 text-justify">
       <form>
         <input type="radio" name="payment" value="bank1" className="p-1" />
         <label className="px-3 py-1 font-bold">Direct Bank Transfer</label>
@@ -22,7 +22,7 @@ const Payment = () => {
           described in our <b>privacy policy.</b>
         </p>
       </form>
-      <button className="flex justify-center p-1 border-2 rounded-xl border-gray-700 hover:bg-gray-200 py-4 w-3/5 text-2xl m-8">
+      <button className="flex justify-center p-1 border-2 rounded-xl border-gray-700 hover:bg-gray-200 py-4 w-3/5 text-xl m-8">
         Place Order
       </button>
     </section>

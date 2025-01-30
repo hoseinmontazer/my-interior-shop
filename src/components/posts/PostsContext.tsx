@@ -74,7 +74,7 @@ const PostsContext: React.FC<PostsContextProps> = ({
         alt={alt}
         className="xl:max-w-[800px] xl:max-h-[600px] lg:max-w-[600px] lg:max-h-[400px] rounded-lg"
       />
-      <section className="flex flex-row items-center lg:text-lg text-gray-400 py-3">
+      <section className="flex flex-row items-center text-gray-400 py-3">
         <FaUser />
         <span className="ml-1 mr-6">Admin</span>
         <FaCalendar />
