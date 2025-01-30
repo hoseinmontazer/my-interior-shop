@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const PageLinks = () => {
   return (
-    <nav className="flex flex-col md:flex-row justify-center items-center md:p-1 space-y-4 md:space-y-0 text-2xl font-semibold p-2">
+    <nav className="flex flex-col md:flex-row justify-center items-center md:p-1 space-y-4 md:space-y-0 text-xl font-semibold p-2">
       <Link to="/" className="rounded-md px-6 py-2 hover:bg-gray-100">
         Home
       </Link>

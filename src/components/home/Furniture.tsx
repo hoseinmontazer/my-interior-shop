@@ -48,11 +48,11 @@ const Furniture: React.FC<FurnitureProps> = () => {
 
   return (
     <section>
-      <header className="text-center mb-14 pt-20">
-        <p className="text-lg xl:text-2xl font-bold text-muted">
+      <header className="text-center mb-6 pt-20">
+        <p className="text-lg font-bold text-muted">
           Share your setup with
         </p>
-        <h1 className="text-3xl xl:text-6xl font-bold text-gray-800">
+        <h1 className="text-3xl font-bold text-gray-800">
           #CozyHomeFurniture
         </h1>
       </header>

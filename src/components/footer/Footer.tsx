@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="py-2">
       <hr className="border-3 border-gray-400" />
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-3 xl:text-2xl my-8 mx-16">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-3 xl:text-lg my-8 mx-16">
         <ul className="mx-5">
           <li className="text-3xl font-extrabold py-4">Cozy Home.</li>
           <li className="text-wrap text-gray-400 pt-4">
@@ -37,12 +37,12 @@ const Footer = () => {
         </ul>
         <ul className="mx-5">
           <li className="text-gray-400 py-4">Newsletter</li>
-          <li className="py-4 text-lg font-medium flex flex-col items-center 2xl:flex-row gap-5">
+          <li className="py-4 font-medium flex flex-col items-center 2xl:flex-row gap-5">
             <input
               className="border-black border-b w-full px-1 "
-              placeholder="Enter Your Email Address"
+              placeholder="Enter Your Email"
             ></input>
-            <button className="border-black border-b w-full md:w-1/3">
+            <button className="border-black border-b w-full md:w-1/2">
               SUBSCRIBE
             </button>
           </li>
@@ -50,7 +50,7 @@ const Footer = () => {
       </div>
       <div className="w-full my-8 pl-6">
         <hr className="mx-auto border-gray-600 w-11/12" />
-        <p className="text-left text-xl font-medium p-3 mt-5 lg:ml-16">
+        <p className="text-left text-lg font-medium p-3 mt-5 lg:ml-12">
           2023 Cozy Home. All rights revered
         </p>
       </div>

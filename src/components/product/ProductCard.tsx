@@ -21,7 +21,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
   return (
     <article className="relative group bg-indigo-50 overflow-hidden">
       <img
-        className="w-full h-[380px] object-cover object-center"
+        className="w-full h-[350px] object-cover object-center"
         src={image}
         alt={name}
       />
@@ -33,25 +33,25 @@ const ProductCard: React.FC<ProductCardProps> = ({
         </Link>
         <menu className="flex gap-3 p-3">
           <button className="flex items-center justify-center text-white text-base xl:text-lg font-bold hover:text-slate-800 transition">
-            <CiShare2 className="size-7" />
+            <CiShare2 className="size-5" />
             {"Share"}
           </button>
           <button className="flex items-center justify-center text-white text-base xl:text-lg font-bold hover:text-slate-800 transition">
-            <MdCompareArrows className="size-7" />
+            <MdCompareArrows className="size-5" />
             {"Compare"}
           </button>
           <button className="flex items-center justify-center text-white text-base xl:text-lg font-bold hover:text-slate-800 transition">
-            <CiHeart className="size-7" />
+            <CiHeart className="size-5" />
             {"Like"}
           </button>
         </menu>
       </figcaption>
 
       <section className="p-4">
-        <h1 className="font-bold text-3xl p-1">{name}</h1>
+        <h1 className="font-bold text-2xl p-1">{name}</h1>
         <h2 className="text-gray-500 text-lg p-1">{description}</h2>
         <h1 className="flex items-center p-1">
-          <p className="font-bold text-3xl p-1">{price}</p>
+          <p className="font-bold text-2xl p-1">{price}</p>
           {
             <p className="flex items-center justify-center text-gray-500 text-2xl line-through px-3">
               {sale}

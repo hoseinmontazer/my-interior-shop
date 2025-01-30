@@ -1,9 +1,9 @@
 const BrowseTheRange = () => {
   return (
     <section className="text-center p-5 mx-auto">
-      <div className="py-5 lg:py-12">
-        <h1 className="font-bold text-3xl xl:text-5xl p-2">Browse The Range</h1>
-        <p className="text-xl lg:text-2xl text-gray-500">
+      <div className="py-5 lg:py-8">
+        <h1 className="font-bold text-3xl p-2">Browse The Range</h1>
+        <p className="text-xl text-gray-500">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
       </div>
@@ -16,7 +16,7 @@ const BrowseTheRange = () => {
             alt="dining"
             className="w-full h-[580px] object-center object-cover rounded-xl"
           />
-          <figcaption className="py-2 lg:py-8 text-3xl font-bold text-gray-700">
+          <figcaption className="py-2 lg:py-5 text-xl font-bold text-gray-700">
             Dining
           </figcaption>
         </figure>
@@ -28,7 +28,7 @@ const BrowseTheRange = () => {
             alt="living"
             className="w-full h-[580px] object-center object-cover rounded-xl"
           />
-          <figcaption className="py-2 lg:py-8 text-3xl font-bold text-gray-700">
+          <figcaption className="py-2 lg:py-5 text-xl font-bold text-gray-700">
             Living
           </figcaption>
         </figure>
@@ -40,7 +40,7 @@ const BrowseTheRange = () => {
             alt="bedroom"
             className="w-full h-[580px] object-center object-cover rounded-xl"
           />
-          <figcaption className="py-2 lg:py-8 text-3xl font-bold text-gray-700">
+          <figcaption className="py-2 lg:py-5 text-xl font-bold text-gray-700">
             Bedroom
           </figcaption>
         </figure>

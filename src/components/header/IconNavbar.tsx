@@ -8,16 +8,16 @@ const IconNavbar = () => {
   return (
     <nav className="flex justify-around p-5">
       <Link to="/checkout" className="text-dark px-6">
-        <FaRegUser className="size-8" />
+        <FaRegUser className="size-6" />
       </Link>
       <Link to="/cart" className="text-dark px-6">
-        <HiMiniMagnifyingGlass className="size-8" />
+        <HiMiniMagnifyingGlass className="size-6" />
       </Link>
       <Link to="/checkout" className="text-dark px-6">
-        <IoIosHeartEmpty className="size-8" />
+        <IoIosHeartEmpty className="size-6" />
       </Link>
       <Link to="/cart" className="text-dark px-6">
-        <IoCartOutline className="size-8" />
+        <IoCartOutline className="size-6" />
       </Link>
     </nav>
   );

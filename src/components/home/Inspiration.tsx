@@ -28,7 +28,7 @@ const Inspiration: React.FC<InspirationProps> = () => {
   return (
     <section className="bg-fuchsia-50 py-20 flex flex-col lg:flex-row justify-center items-center lg:items-start px-5">
       <section className="text-center lg:text-left lg:w-[40%] p-5 xl:p-12">
-        <h1 className="text-6xl text-gray-700 font-bold lg:text-left">
+        <h1 className="text-4xl text-gray-700 font-bold lg:text-left">
           50+ Beautiful rooms inspiration
         </h1>
         <p className="text-2xl font-semibold text-gray-500 text-wrap my-6 pr-6 lg:text-left">
