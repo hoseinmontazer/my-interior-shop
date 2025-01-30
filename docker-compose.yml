@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   my-interior-shop:
-    image: timmy-interior-shopewavefront:latest
+    image: my-interior-shop:latest
     container_name: my-interior-shop
     ports:
       - "3021:80"  
