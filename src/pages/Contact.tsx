@@ -7,13 +7,13 @@ import MySecHeader from "../components/header/MySecHeader";
 const Contact = () => {
   return (
     <div className="bg-black">
-      <div className="shop-container">
+      <main className="shop-container">
         <MyHeader />
         <MySecHeader title="Contact" />
         <ContactInfo />
         <UpperFooter />
         <Footer />
-      </div>
+      </main>
     </div>
   );
 };

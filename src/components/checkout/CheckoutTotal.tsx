@@ -10,7 +10,7 @@ const CheckoutTotal = () => {
         </div>
         <div className="flex justify-between p-3">
           <dt className="mx-2 text-xl text-gray-500">
-            Asgaard chair<spna className="text-black ml-1">x 1</spna>
+            Asgaard chair<span className="text-black ml-1">x 1</span>
           </dt>
           <dd className="mx-2 text-xl">2500 $</dd>
         </div>
