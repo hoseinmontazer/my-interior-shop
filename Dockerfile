@@ -5,7 +5,7 @@ COPY package*.json ./
 RUN yarn install
 COPY . .
 RUN yarn build
-
+RUN ls -lah 
 
 # production stage
 FROM registry.uid.ir/uid/nginx:1.21.0-alpine as production-stage
