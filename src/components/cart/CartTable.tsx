@@ -4,7 +4,7 @@ import SubtotalCard from "./SubtotalCard";
 
 const CartTable = () => {
   return (
-    <main className="py-16 pt-16 p-5 flex xl:flex-row xl:justify-around flex-col justify-center mx-auto">
+    <section className="py-16 pt-16 p-5 flex xl:flex-row xl:justify-around flex-col justify-center mx-auto">
       <table className="hidden md:table text-center mb-5">
         <thead className="bg-purple-50 text-2xl">
           <tr>
@@ -31,8 +31,8 @@ const CartTable = () => {
             <td className="lg:px-10 text-gray-400">2500 $</td>
             <td className="lg:px-24">
               <p>
-              <TbSquareNumber1 className="size-8" />
-                </p>
+                <TbSquareNumber1 className="size-8" />
+              </p>
             </td>
             <td className="lg:px-10">2500 $</td>
             <td className="lg:px-10 text-center text-yellow-600">
@@ -71,7 +71,7 @@ const CartTable = () => {
       <aside>
         <SubtotalCard />
       </aside>
-    </main>
+    </section>
   );
 };
 export default CartTable;

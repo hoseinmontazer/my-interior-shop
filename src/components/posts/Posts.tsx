@@ -34,7 +34,7 @@ const Posts: React.FC<PostsProps> = () => {
     },
   ];
   return (
-    <main className="container flex flex-col xl:flex-row justify-between py-6 xl:py-24">
+    <div className="container flex flex-col xl:flex-row justify-between py-6 xl:py-24">
       <section className="lg:w-2/3 w-full p-3 xl:pl-24">
         <div>
           {posts.map((post) => (
@@ -50,7 +50,7 @@ const Posts: React.FC<PostsProps> = () => {
         <Pagination items={posts} itemsPerPage={3} />
       </section>
       <Article />
-    </main>
+    </div>
   );
 };
 

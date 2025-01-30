@@ -1,6 +1,6 @@
 import Pagination from "../Pagination";
 import ProductList from "./ProductList";
-import {products} from '../../data/Product'
+import {products} from "../../data/Product"
 
 interface ShopItemsProps {}
 const ShopItems: React.FC<ShopItemsProps> = () => {

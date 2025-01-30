@@ -1,6 +1,6 @@
 const RecentPosts: React.FC = () => {
   return (
-    <div className="py-24 text-wrap">
+    <section className="py-24 text-wrap">
       <header className="text-3xl font-bold">Recent Posts</header>
       <figure className="flex flex-row py-3 items-center">
         <img
@@ -73,7 +73,7 @@ const RecentPosts: React.FC = () => {
           <p className="text-sm text-gray-400">03 Aug 2022</p>
         </figcaption>
       </figure>
-    </div>
+    </section>
   );
 };
 export default RecentPosts;

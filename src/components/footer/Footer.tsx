@@ -1,56 +1,60 @@
+import { Link } from "react-router";
+
 const Footer = () => {
   return (
-    <div className="bg-white py-2">
+    <footer className="py-2">
       <hr className="border-3 border-gray-400" />
-      <div className="pt-2">
-        <div className="flex justify-center mx-5">
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-8 text-lg text-left list-none">
-            <ul className="pr-5">
-              <li className="text-2xl font-extrabold py-4">Cozy Home.</li>
-              <li className="text-wrap text-gray-400 pt-4">
-                400 University Drive Suite 200 Coral Gables,
-              </li>
-              <p className="text-wrap text-gray-400">FL 33134</p>
-            </ul>
-            <ul className="pr-3">
-              <li className="text-gray-400 py-4">Links</li>
-              <li className="py-4 font-medium hover:underline">Home</li>
-              <li className="py-4 font-medium hover:underline">Shop</li>
-              <li className="py-4 font-medium hover:underline">Blog</li>
-              <li className="py-4 font-medium hover:underline">Contact</li>
-            </ul>
-            <ul className="pr-3">
-              <li className="text-gray-400 py-4">Help</li>
-              <li className="py-4 font-medium hover:underline">
-                Payment Options
-              </li>
-              <li className="py-4 font-medium hover:underline">Returns</li>
-              <li className="py-4 font-medium hover:underline">
-                Privacy Policies
-              </li>
-            </ul>
-            <ul className="pr-3">
-              <li className="text-gray-400 py-4">Newsletter</li>
-              <li className="py-4 text-base font-medium flex flex-col md:flex-row gap-3 md:gap-5">
-                <input
-                  className="border-black border-b w-full md:w-auto"
-                  placeholder="Enter Your Email Address"
-                ></input>
-                <button className="border-black border-b w-full md:w-auto">
-                  SUBSCRIBE
-                </button>
-              </li>
-            </ul>
-          </div>
-        </div>
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-3 xl:text-2xl my-8 mx-16">
+        <ul className="mx-5">
+          <li className="text-3xl font-extrabold py-4">Cozy Home.</li>
+          <li className="text-wrap text-gray-400 pt-4">
+            400 University Drive Suite 200 Coral Gables,
+          </li>
+          <p className="text-wrap text-gray-400">FL 33134</p>
+        </ul>
+        <ul className="mx-5">
+          <li className="text-gray-400 py-4">Links</li>
+          <li className="py-4 font-medium hover:underline">
+            <Link to="/">Home</Link>
+          </li>
+          <li className="py-4 font-medium hover:underline">
+            <Link to="/shop">Shop</Link>
+          </li>
+          <li className="py-4 font-medium hover:underline">
+            {" "}
+            <Link to="/blog">Blog </Link>
+          </li>
+          <li className="py-4 font-medium hover:underline">
+            {" "}
+            <Link to="/contact">Contact </Link>
+          </li>
+        </ul>
+        <ul className="mx-5">
+          <li className="text-gray-400 py-4">Help</li>
+          <li className="py-4 font-medium hover:underline">Payment Options</li>
+          <li className="py-4 font-medium hover:underline">Returns</li>
+          <li className="py-4 font-medium hover:underline">Privacy Policies</li>
+        </ul>
+        <ul className="mx-5">
+          <li className="text-gray-400 py-4">Newsletter</li>
+          <li className="py-4 text-lg font-medium flex flex-col items-center 2xl:flex-row gap-5">
+            <input
+              className="border-black border-b w-full px-1 "
+              placeholder="Enter Your Email Address"
+            ></input>
+            <button className="border-black border-b w-full md:w-1/3">
+              SUBSCRIBE
+            </button>
+          </li>
+        </ul>
       </div>
-      <div className="w-full pt-4 pl-6">
+      <div className="w-full my-8 pl-6">
         <hr className="mx-auto border-gray-600 w-11/12" />
-        <p className="text-left text-lg font-medium p-3 lg:ml-12">
+        <p className="text-left text-xl font-medium p-3 mt-5 lg:ml-16">
           2023 Cozy Home. All rights revered
         </p>
       </div>
-    </div>
+    </footer>
   );
 };
 export default Footer;

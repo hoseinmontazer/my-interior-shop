@@ -5,7 +5,7 @@ interface HomePageProductProps {}
 const HomePageProduct: React.FC<HomePageProductProps> = () => {
   return (
     <section>
-      <h1 className="text-center font-bold text-5xl">Our Products</h1>
+      <h1 className="text-center font-bold text-5xl pb-10">Our Products</h1>
       <ProductList limit={8} />
     </section>
   );

@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import './index.css';
+import "./index.css";
 import Home from "./pages/Home";
 import Shop from "./pages/Shop";
 import Blog from "./pages/Blog";
@@ -12,11 +12,11 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path='/shop' element={<Shop /> } />
-        <Route path='/blog' element={<Blog />} />
-        <Route path='/contact' element={<Contact />} />
+        <Route path="/shop" element={<Shop /> } />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path='/checkout' element={<Checkout />} />
+        <Route path="/checkout" element={<Checkout />} />
       </Routes>
     </BrowserRouter>
   );

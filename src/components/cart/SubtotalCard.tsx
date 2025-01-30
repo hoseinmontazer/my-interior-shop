@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const SubtotalCard = () => {
   return (
-    <main className="pb-16 px-5 xl:px-24 bg-purple-50 text-center mb-10">
+    <section className="pb-16 px-5 xl:px-24 bg-purple-50 text-center mb-10">
       <header>
         <h1 className="p-5 pt-8 text-5xl font-bold">Cart Totals</h1>
       </header>
@@ -22,7 +22,7 @@ const SubtotalCard = () => {
           Check Out
         </button>
       </Link>
-    </main>
+    </section>
   );
 };
 export default SubtotalCard;

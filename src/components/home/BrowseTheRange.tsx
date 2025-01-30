@@ -1,12 +1,12 @@
 const BrowseTheRange = () => {
   return (
-    <div className="text-center p-5 mx-auto">
-      <article className="py-5 lg:py-12">
+    <section className="text-center p-5 mx-auto">
+      <div className="py-5 lg:py-12">
         <h1 className="font-bold text-3xl xl:text-5xl p-2">Browse The Range</h1>
         <p className="text-xl lg:text-2xl text-gray-500">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
-      </article>
+      </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-6 mx-5 lg:mx-24">
         <figure>
           <img
@@ -45,7 +45,7 @@ const BrowseTheRange = () => {
           </figcaption>
         </figure>
       </div>
-    </div>
+    </section>
   );
 };
 

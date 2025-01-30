@@ -26,7 +26,7 @@ const Inspiration: React.FC<InspirationProps> = () => {
   ];
 
   return (
-    <main className="bg-fuchsia-50 py-20 flex flex-col lg:flex-row justify-center items-center lg:items-start px-5">
+    <section className="bg-fuchsia-50 py-20 flex flex-col lg:flex-row justify-center items-center lg:items-start px-5">
       <section className="text-center lg:text-left lg:w-[40%] p-5 xl:p-12">
         <h1 className="text-6xl text-gray-700 font-bold lg:text-left">
           50+ Beautiful rooms inspiration
@@ -39,7 +39,7 @@ const Inspiration: React.FC<InspirationProps> = () => {
           Explore More
         </button>
       </section>
-      <nav className="overflow-x-scroll scroll-smooth w-full lg:w-[50%]">
+      <div className="overflow-x-scroll scroll-smooth w-full lg:w-[50%]">
         <figure className="flex space-x-6">
           {images.map((img, index) => (
             <img
@@ -50,8 +50,8 @@ const Inspiration: React.FC<InspirationProps> = () => {
             />
           ))}
         </figure>
-      </nav>
-    </main>
+      </div>
+    </section>
   );
 };
 

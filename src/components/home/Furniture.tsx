@@ -47,32 +47,31 @@ const Furniture: React.FC<FurnitureProps> = () => {
   };
 
   return (
-    <div className="bg-white pt-20">
-      <div className="text-center mb-14">
-        <p className="text-lg xl:text-xl font-bold text-muted">
+    <section>
+      <header className="text-center mb-14 pt-20">
+        <p className="text-lg xl:text-2xl font-bold text-muted">
           Share your setup with
         </p>
         <h1 className="text-3xl xl:text-6xl font-bold text-gray-800">
           #CozyHomeFurniture
         </h1>
-      </div>
-
+      </header>
       <Masonry
         breakpointCols={breakpointColumnsObj}
         className="my-masonry-grid"
         columnClassName="my-masonry-grid_column"
       >
         {images.map((img, index) => (
-          <div key={index}>
+          <figure key={index}>
             <img
               src={img.src}
               alt={img.alt}
               className="w-full h-auto my-3 object-cover transform scale-100 hover:scale-105 transition ease-in-out"
             />
-          </div>
+          </figure>
         ))}
       </Masonry>
-    </div>
+    </section>
   );
 };
 
