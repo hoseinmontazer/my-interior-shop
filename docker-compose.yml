@@ -1,0 +1,14 @@
+version: '3.8' 
+
+services:
+  my-interior-shop:
+    image: timmy-interior-shopewavefront:latest
+    container_name: my-interior-shop
+    ports:
+      - "127.0.0.1:3021:80"  
+    networks:
+      - gotorrentz
+
+networks:
+  gotorrentz:
+    external: true
