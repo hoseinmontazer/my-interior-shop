@@ -8,10 +8,10 @@ const BrowseTheRange = () => {
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-6 mx-5 lg:mx-24">
-        <figure>
+      <figure>
           <img
             src={
-              "https://res.cloudinary.com/dxjjsfami/image/upload/v1737989343/dining_bsgqsu.png"
+              "https://res.cloudinary.com/dxjjsfami/image/upload/v1737990581/dining_bsgqsu.jpg"
             }
             alt="dining"
             className="w-full h-[580px] object-center object-cover rounded-xl"
