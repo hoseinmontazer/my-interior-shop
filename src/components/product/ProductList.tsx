@@ -27,6 +27,7 @@ const ProductList: React.FC<ProductListProps> = ({
         {visibleProducts.map((product, index) => (
           <ProductCard
             key={index}
+            id={product.id}
             image={product.image}
             name={product.name}
             description={product.description}

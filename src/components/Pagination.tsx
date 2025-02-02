@@ -8,6 +8,7 @@ interface PaginationProps {
 const Pagination: React.FC<PaginationProps> = ({ items, itemsPerPage }) => {
   const [currentPage, setCurrentPage] = useState<number>(1);
   const totalPages = Math.ceil(items.length / itemsPerPage);
+
   const handlePageChange = (page: number): void => {
     if (page >= 1 && page <= totalPages) {
       setCurrentPage(page);

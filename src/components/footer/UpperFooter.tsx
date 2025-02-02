@@ -1,7 +1,7 @@
-import trophy from "../../assets/trophy.svg";
-import warranty from "../../assets/warranty.svg";
-import delivery from "../../assets/delivery.svg";
-import support from "../../assets/support.svg";
+import trophy from "../../assets/icons/trophy.svg";
+import warranty from "../../assets/icons/warranty.svg";
+import delivery from "../../assets/icons/delivery.svg";
+import support from "../../assets/icons/support.svg";
 
 const UpperFooter = () => {
   return (

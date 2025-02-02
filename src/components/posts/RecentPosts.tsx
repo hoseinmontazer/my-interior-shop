@@ -14,7 +14,7 @@ const RecentPosts: React.FC = () => {
           <h1 className="text-base mb-1 font-medium">
             Going all-in with millenial design
           </h1>
-          <p className="text-sm text-gray-400">03 Aug 2022</p>
+          <p className="text-sm text-gray-400">03 Aug 2024</p>
         </figcaption>
       </figure>
       <figure className="flex flex-row py-3 items-center">
@@ -29,7 +29,7 @@ const RecentPosts: React.FC = () => {
           <h1 className="text-base mb-1 font-medium">
             Exploring new ways of decorating
           </h1>
-          <p className="text-sm text-gray-400">03 Aug 2022</p>
+          <p className="text-sm text-gray-400">03 Aug 2024</p>
         </figcaption>
       </figure>
       <figure className="flex flex-row py-3 items-center">
@@ -44,7 +44,7 @@ const RecentPosts: React.FC = () => {
           <h1 className="text-base mb-1 font-medium">
             Handmade pieces that took time to make
           </h1>
-          <p className="text-sm text-gray-400">03 Aug 2022</p>
+          <p className="text-sm text-gray-400">03 Aug 2024</p>
         </figcaption>
       </figure>
       <figure className="flex flex-row py-3 items-center">
@@ -56,7 +56,7 @@ const RecentPosts: React.FC = () => {
         />
         <figcaption>
           <h1 className="text-base mb-1 font-medium">Modern home in Milan</h1>
-          <p className="text-sm text-gray-400">03 Aug 2022</p>
+          <p className="text-sm text-gray-400">03 Aug 2024</p>
         </figcaption>
       </figure>
       <figure className="flex flex-row py-3 items-center">
@@ -68,9 +68,9 @@ const RecentPosts: React.FC = () => {
         />
         <figcaption>
           <h1 className="text-base mb-1 font-medium">
-            Colorful office redsign
+            Colorful office redesign
           </h1>
-          <p className="text-sm text-gray-400">03 Aug 2022</p>
+          <p className="text-sm text-gray-400">03 Aug 2024</p>
         </figcaption>
       </figure>
     </section>

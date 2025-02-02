@@ -5,6 +5,7 @@ interface PostsContextProps {
   img: string;
   alt: string;
   topic: string;
+  date: string;
   tag: string;
 }
 
@@ -57,6 +58,7 @@ const PostsContext: React.FC<PostsContextProps> = ({
   img,
   alt,
   topic,
+  date,
   tag,
 }) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -78,7 +80,7 @@ const PostsContext: React.FC<PostsContextProps> = ({
         <FaUser />
         <span className="ml-1 mr-6">Admin</span>
         <FaCalendar />
-        <span className="ml-1 mr-6">14 Oct 2024</span>
+        <span className="ml-1 mr-6">{date}</span>
         <FaTag />
         <span className="ml-1 mr-6">{tag}</span>
       </section>

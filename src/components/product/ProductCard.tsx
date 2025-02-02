@@ -1,9 +1,10 @@
 import { CiShare2 } from "react-icons/ci";
 import { MdCompareArrows } from "react-icons/md";
 import { CiHeart } from "react-icons/ci";
-import { Link } from "react-router-dom";
+import { useCart } from "../../hooks/CartContext";
 
 interface ProductCardProps {
+  id: string
   image: string;
   name: string;
   description: string;
@@ -12,12 +13,14 @@ interface ProductCardProps {
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({
+  id,
   image,
   name,
   description,
   price,
   sale,
 }) => {
+  const { addToCart } = useCart(); 
   return (
     <article className="relative group bg-indigo-50 overflow-hidden">
       <img
@@ -26,11 +29,10 @@ const ProductCard: React.FC<ProductCardProps> = ({
         alt={name}
       />
       <figcaption className="absolute inset-0 bg-neutral-950 bg-opacity-60 translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out flex flex-col justify-center items-center">
-        <Link to="/cart">
-          <button className="bg-white text-yellow-700 font-bold text-lg px-12 py-3 transition hover:bg-slate-300">
+          <button className="bg-white text-yellow-700 font-bold text-lg px-12 py-3 transition hover:bg-slate-300"
+           onClick={() => addToCart({ id, name, price, image })}>
             Add to Cart
           </button>
-        </Link>
         <menu className="flex gap-3 p-3">
           <button className="flex items-center justify-center text-white text-base xl:text-lg font-bold hover:text-slate-800 transition">
             <CiShare2 className="size-5" />
