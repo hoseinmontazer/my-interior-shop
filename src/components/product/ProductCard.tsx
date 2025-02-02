@@ -8,8 +8,8 @@ interface ProductCardProps {
   image: string;
   name: string;
   description: string;
-  price: string;
-  sale?: string;
+  price: number;
+  sale: number;
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({
@@ -53,10 +53,10 @@ const ProductCard: React.FC<ProductCardProps> = ({
         <h1 className="font-bold text-2xl p-1">{name}</h1>
         <h2 className="text-gray-500 text-lg p-1">{description}</h2>
         <h1 className="flex items-center p-1">
-          <p className="font-bold text-2xl p-1">{price}</p>
+          <p className="font-bold text-2xl p-1">{price + "$"}</p>
           {
-            <p className="flex items-center justify-center text-gray-500 text-2xl line-through px-3">
-              {sale}
+            sale && <p className="flex items-center justify-center text-gray-500 text-2xl line-through px-3">
+              {sale + "$"}
             </p>
           }
         </h1>
