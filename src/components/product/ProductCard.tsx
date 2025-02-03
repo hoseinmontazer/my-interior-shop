@@ -35,16 +35,16 @@ const ProductCard: React.FC<ProductCardProps> = ({
            onClick={() => addToCart({ id, name, price, sale, image, quantity })}>
             Add to Cart
           </button>
-        <menu className="flex gap-3 p-3">
-          <button className="flex items-center justify-center text-white text-base xl:text-lg font-bold hover:text-slate-800 transition">
+        <menu className="flex gap-2 p-2">
+          <button className="flex items-center justify-center text-white font-bold hover:text-slate-500 transition">
             <CiShare2 className="size-5" />
             {"Share"}
           </button>
-          <button className="flex items-center justify-center text-white text-base xl:text-lg font-bold hover:text-slate-800 transition">
+          <button className="flex items-center justify-center text-white font-bold hover:text-slate-500 transition">
             <MdCompareArrows className="size-5" />
             {"Compare"}
           </button>
-          <button className="flex items-center justify-center text-white text-base xl:text-lg font-bold hover:text-slate-800 transition">
+          <button className="flex items-center justify-center text-white font-bold hover:text-slate-500 transition">
             <CiHeart className="size-5" />
             {"Like"}
           </button>

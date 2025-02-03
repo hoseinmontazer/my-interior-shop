@@ -33,7 +33,7 @@ const ProductList: React.FC<ProductListProps> = ({
             description={product.description}
             price={product.price}
             sale={product.sale}
-            quantity={product.quantity}        
+            quantity={product.quantity ?? 1}        
           />
         ))}
       </div>
