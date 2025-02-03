@@ -6,6 +6,7 @@ export interface Product {
   price: number;
   sale?: number;
   image: string;
+  quantity?: number
 }
 
 let idCounter = 1;
