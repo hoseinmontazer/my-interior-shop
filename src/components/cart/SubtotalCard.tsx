@@ -1,12 +1,10 @@
 import { Link } from "react-router-dom";
 import { useCart } from "../../hooks/CartContext";
+import { useCartTotals } from "../../hooks/useCartTotals";
 
 const SubtotalCard = () => {
   const { cart } = useCart();
-  const subtotal = cart.reduce((total, product)=> total + product.price , 0)
-  const shipping = subtotal > 150 ? 0 : 20;
-  const total = subtotal + shipping;
-
+  const { subtotal, shipping, total } = useCartTotals();
 
   return (
     <section className="pb-16 px-5 xl:px-16 bg-purple-50 text-center mb-10">
@@ -17,14 +15,13 @@ const SubtotalCard = () => {
         <h1>Total is 0</h1>
       ) : (
         <section>
-          {" "}
           <dl className="text-lg">
             <div className="flex justify-between p-3">
               <dt className="font-semibold">Subtotal</dt>
               <dd className="text-muted">{subtotal.toLocaleString()} $</dd>
             </div>
             <div className="flex justify-between p-3">
-              <dt className="font-semibold">Shepping</dt>
+              <dt className="font-semibold">Shipping</dt>
               <dd className="text-muted">{shipping === 0 ? "FREE" : `${shipping} $`}</dd>
             </div>
             <div className="flex justify-between p-3 mb-3">
@@ -44,4 +41,5 @@ const SubtotalCard = () => {
     </section>
   );
 };
+
 export default SubtotalCard;

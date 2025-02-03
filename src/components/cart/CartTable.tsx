@@ -30,6 +30,7 @@ const CartPage = () => {
                       className="w-16 h-16 object-cover rounded mr-4"
                     />
                     {product.name}
+                    <span className="text-gray-500 ml-2"> x {product.quantity}</span>
                   </td>
                   <td className="border border-gray-300 px-4 py-2">
                     {product.price} $

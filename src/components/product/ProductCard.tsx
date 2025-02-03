@@ -10,6 +10,7 @@ interface ProductCardProps {
   description: string;
   price: number;
   sale: any;
+  quantity: number
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({
@@ -19,6 +20,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
   description,
   price,
   sale,
+  quantity,
 }) => {
   const { addToCart } = useCart(); 
   return (
@@ -30,7 +32,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
       />
       <figcaption className="absolute inset-0 bg-neutral-950 bg-opacity-60 translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out flex flex-col justify-center items-center">
           <button className="bg-white text-yellow-700 font-bold text-lg px-12 py-3 transition hover:bg-slate-300"
-           onClick={() => addToCart({ id, name, price, sale, image })}>
+           onClick={() => addToCart({ id, name, price, sale, image, quantity })}>
             Add to Cart
           </button>
         <menu className="flex gap-3 p-3">
