@@ -20,7 +20,6 @@ const CartContext = createContext<CartContextType | undefined>(undefined);
 export const CartProvider = ({ children }: { children: ReactNode }) => {
   const [cart, setCart] = useState<Product[]>([]);
   const [showModal, setShowModal] = useState(false);
-  const [modalProduct, setModalProduct] = useState<Product | null>(null);
 
   const addToCart = (product: Product) => {
     setCart((prevCart) => {
@@ -34,7 +33,6 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
       }
     });
 
-    setModalProduct(product);
     setShowModal(true);
 
     setTimeout(() => setShowModal(false), 1500);
